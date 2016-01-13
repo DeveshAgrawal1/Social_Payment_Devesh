@@ -1,0 +1,24 @@
+
+The program is developed using NetBeans IDE 8.1 and JAVA language.
+The program is created keeping in mind that "State does not need to persist between runs."
+
+The program is designed to run with both modes of execution:
+
+* interactively (from stdin), when run with no arguments :-
+
+	For running the program in this mode, the user must input his choice, the choice is whether to quit (by entering 'q') or to continue entering the commands (by entering any other character). 
+	The program will then take the commands from the user on a next line and execute them accordingly.
+
+* from a file of newline-delimited commands, when provided with one argument :-
+	
+	For running the program in this mode, run the following command in command line prompt
+	java -jar path1 path2 
+	path1 is the path of the jar file present in the dist folder inside the project (full path in quotes).
+	path2 is the path of the input file.
+
+	The program will then take each line written in separate lines as input and process them as commands.
+	The output will be shown accordingly on the command prompt itself.
+
+	Note: There will be no separate output file.
+
+I have attached screenshots of both types of runs and the input.txt file used for the second mode of execution can be found in the project folder.

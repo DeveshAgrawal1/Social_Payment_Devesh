@@ -1,0 +1,40 @@
+The program is developed using NetBeans IDE 8.1 and JAVA language.
+The program is created keeping in mind that "State does not need to persist between runs."
+
+All the files are present in a package socialpayment.
+
+The package contains three .java files i.e. java classes :
+
+	* User.java - 
+		# This class creates a user. 
+		# It assigns the user name, balance, credit card.
+		# It also keeps track of number of cards and number of transactions done by the user.
+		# It also contains separate arraylists for transactions (explained separately).
+		# It also has a function (transhist) to create a transaction history of the user.
+		# It also contains function to add credit card to a user.
+
+	* CreditCard.java -
+		# This class creates a credit card.
+
+	* SocialPayment.java - 
+		# This is the main class of the project.
+		# It contains the main function responsible for running the project.
+		# It takes input either from stdin or using an argument (a file name).
+		# The functions in this class are explained separately.
+
+I created ArrayLists to store the Users and Cards instead of a file or database because it wasn't necessary to maintain the state between runs. However, it would have been easier to create the project using files.
+
+The feed was the most difficult part to simulate :
+I first, thought of creating a database using JDBC, but according to instruction state need not be persistent, this eliminated JDBC.
+On second thought, I tried to create maps using HashMaps linking amount to note and name. But it was not giving desired results.
+Then, after some time pondering over it, I realised it was simpler than I had thought. Arraylists were enough to replicate the transaction history as given in instructions. Four separate lists worked in tandem, storing at each index, the values necessary to define that transaction and also as a user had his own lists, I was able to define a debit/credit system too.
+
+transhist function (in User class) :
+
+1. It checks the mode of transaction : if false use debit and credit otherwise.
+2. tran - stores the actor or a target involved in a transaction with the particular user.
+3. pays - stores the amount involved in a transaction.
+4. trans - distinguishes "paid to" from "paid you".
+5. notess - stores the note associated with the transaction.
+
+Note: The code has been fully commented properly to give every detail necessary.

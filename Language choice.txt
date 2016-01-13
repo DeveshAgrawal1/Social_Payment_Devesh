@@ -1,0 +1,11 @@
+
+I chose JAVA over C++ to implement this project.
+
+Personally, I like C++ for programming purposes like online competitions, partly also because it is the first programming language I learned.
+
+But, as far as bigger projects are concerned like this one, I use JAVA because:
+
+# It has a built in garbage collection system which I feel is a very big advantage as we don't have to worry about deleting an array or such things.
+# Multi Threading, though I didn't use it in this project, but it is a very useful concept to be used in a project.
+# It is very secure because it uses a JVM.
+# Also, if this program had to be made in GUI, it would be tons easier to create it in JAVA than C++.
