@@ -1,0 +1,11 @@
+user devesh
+balance devesh
+user 
+user himanshi
+bar
+add devesh 1234567890123456
+add devesh 4111111111111111
+pay devesh himanshi $100 birthday gift
+feed devesh
+feed himanshi
+pay himanshi devesh $22 for fun
